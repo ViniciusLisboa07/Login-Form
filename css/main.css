@@ -19,8 +19,8 @@ h1{
     text-align: center;
     padding: 15px;
     background-color: white;
-    /* animation-name: fade;
-    animation-duration: 1s; */
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 
 form{
