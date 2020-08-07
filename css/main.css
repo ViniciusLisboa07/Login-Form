@@ -13,56 +13,81 @@ h1{
 .container{
     position: relative;
     margin: auto;
-    height: 200px;
+    height: 250px;
     width: 30%;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: white;
-    animation-name: fade;
-    animation-duration: 1s;
+    /* animation-name: fade;
+    animation-duration: 1s; */
 }
 
+form{
+    padding: 10px
+}
 
 label{
-    display: block
+    display: block;
+    padding: 0;
     text-align: left;
     font-size:17px;
     color:rgba(97, 92, 92, 0.867); 
+    animation: move 1s;
 }
 
 #femail{
     height: 25px;
-    width: 90%;
+    width: 100%;
     border: 1px solid rgba(211, 211, 211, 0.867);
     border-radius: 7px;
+    animation: move 1s;
 }
 
 #fpassword{
     height: 25px;
-    width: 90%;
+    width: 100%;
     border: 1px solid rgba(211, 211, 211, 0.867);
     border-radius: 7px;
+    animation: move 1s;
 }
 
 #Login{
+    position: relative;
+    top: 50px;
     height: 40px;
     width: 40%;
     border: 1px solid  rgba(211, 211, 211, 0.867);
     border-radius: 20px;
     color: white;
     background-color: steelblue;
+    animation: move 1s;
 }
 
 /* animações */
 
 /* Aparição do FORM */
 
+
 @keyframes fade{
     from{
         opacity: 0;
+        transform: scale(0.9);
     } 
     to{
         opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes move{
+
+    from{
+        opacity: 0;
+        transform: translateX(-10%);
+    } 
+    to{
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
