@@ -1,0 +1,21 @@
+body{
+    font-family: Roboto, sans-serif;
+    background-color: steelblue;
+}
+
+h1{
+    position: static;
+    
+    color: white;
+    position: relative;
+
+}
+
+.container{
+    margin: auto;
+    width: 40%;
+    border-radius:;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
