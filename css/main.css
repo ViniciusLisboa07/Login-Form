@@ -13,12 +13,14 @@ h1{
 .container{
     position: relative;
     margin: auto;
-    height: 250px;
+    height: 200px;
     width: 30%;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
     background-color: white;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 
@@ -41,4 +43,26 @@ label{
     width: 90%;
     border: 1px solid rgba(211, 211, 211, 0.867);
     border-radius: 7px;
+}
+
+#Login{
+    height: 40px;
+    width: 40%;
+    border: 1px solid  rgba(211, 211, 211, 0.867);
+    border-radius: 20px;
+    color: white;
+    background-color: steelblue;
+}
+
+/* animações */
+
+/* Aparição do FORM */
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    } 
+    to{
+        opacity: 1;
+    }
 }
