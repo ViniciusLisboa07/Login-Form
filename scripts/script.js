@@ -1,6 +1,7 @@
 const btnLogin = document.querySelector(".btn-login");
-const form = document.querySelector("form");
+const container = document.querySelector(".container");
 
-btnLogin.addEventListener("click", (event) => {
-
-})
+btnLogin.addEventListener("click", event => {
+    event.preventDefault();
+    container.classList.add("container-hide");
+});

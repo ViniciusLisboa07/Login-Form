@@ -91,3 +91,18 @@ label{
         transform: translateX(0%);
     }
 }
+
+/* On button click */
+
+.container-hide{
+    animation: down 0.5s;
+}
+
+@keyframes down{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100vh);
+    }
+}
