@@ -96,6 +96,7 @@ label{
 
 .container-hide{
     animation: down 0.5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes down{
