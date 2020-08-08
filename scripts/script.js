@@ -38,3 +38,25 @@ container.addEventListener("animationend", (event) => {
         document.querySelector("body").style.overflow = "none";
     }
 });
+
+// BG
+
+const ulSquares = document.querySelector("ul.squares");
+
+for(let i = 0; i <= 10; i++) {
+
+    const li = document.createElement("li");
+
+    const size = Math.floor(Math.random() * (120 - 10) + 10);
+
+    const position = Math.random() * (99 - 1) + 1;
+
+    li.style.width = `${size}px`;
+    li.style.height = `${size}px`;
+    li.style.bottom = `-${size}px`;
+    
+    li.style.left = `${position}%`;
+
+
+    ulSquares.appendChild(li);
+}
