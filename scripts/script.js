@@ -6,8 +6,10 @@ btnLogin.addEventListener("click", event => {
 
     const fields = [ ...document.querySelectorAll(".input-block input")];
 
-    fields.forEach(filed => {
-        if(fild.value == "") container.classList.add("validate-error")
+    fields.forEach(fild => {
+        if(fild.value == "") {
+            container.classList.add("validate-error");
+        }
     });
 
     const formError = document.querySelector(".validate-error");    
