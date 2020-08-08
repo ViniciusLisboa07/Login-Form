@@ -1,10 +1,12 @@
 const btnLogin = document.querySelector(".btn-login");
 const container = document.querySelector(".container");
+const div = document.querySelector("div")
 
 btnLogin.addEventListener("click", event => {
     event.preventDefault();
 
     const fields = [ ...document.querySelectorAll(".input-block input")];
+    
 
     fields.forEach(fild => {
         if(fild.value == "") {
@@ -13,8 +15,6 @@ btnLogin.addEventListener("click", event => {
     });
 
     const formError = document.querySelector(".validate-error");    
-
-    container.classList.add("container-hide");
     if(formError){
         formError.addEventListener("animationend", (event) => {
             if(event.animationName == "nono"){
@@ -22,7 +22,7 @@ btnLogin.addEventListener("click", event => {
             }
         });
     } else{
-        formError.classList.add("form-hide");
+        container.classList.add("form-hide");
     }
 });
 
