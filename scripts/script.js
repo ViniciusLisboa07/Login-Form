@@ -22,7 +22,7 @@ btnLogin.addEventListener("click", event => {
             }
         });
     } else{
-        container.classList.add("form-hide");
+        container.classList.add("container-hide");
     }
 });
 

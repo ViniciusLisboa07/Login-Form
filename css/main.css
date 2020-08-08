@@ -111,11 +111,13 @@ label{
 /* invalid process */
 
 div.validate-error {
-    animation: nono 500ms;
+    animation: nono 200ms linear, fade paused;
+    animation-iteration-count: 2;
 }
 
 @keyframes nono {
-    0%{
+    0%,
+    100%{
         transform: translateX(0);
     }
     35%{
@@ -123,8 +125,5 @@ div.validate-error {
     }
     70%{
         transform: translateX(15%);
-    }
-    100%{
-        transform: translateX(0);
     }
 }
