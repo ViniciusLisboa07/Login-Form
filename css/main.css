@@ -129,6 +129,9 @@ div.validate-error {
 }
 
 /* background */
+body {
+    overflow: hidden;
+}
 
 .squares li{
     width: 40px;
@@ -138,7 +141,7 @@ div.validate-error {
     position: absolute;
     bottom: -40px;
     animation: up 2s infinite;
-    /* animation-direction: alternate; */
+    animation-direction: alternate;
 }
 
 
